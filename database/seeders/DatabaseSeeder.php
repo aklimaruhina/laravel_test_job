@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         \App\Models\User::factory(15)->create();
-        \App\Models\Product::factory(15)->create();
+        // \App\Models\Product::factory(15)->create();
         $attributes = ['Gender', 'Color', 'Size'];
         foreach($attributes as $attrib) {
             $attribute = new Attribute();

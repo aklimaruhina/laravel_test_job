@@ -43,4 +43,4 @@ Route::middleware(['auth', 'verified'])->group(function() {
 	Route::get('/edit_varient/{id}', [AttributeController::class, 'edit_varient'])->name('edit_varient');
 	Route::post('/update_varient/{id}', [AttributeController::class, 'update_varient'])->name('update_varient');
 });
-require __DIR__.'/auth.php';
+// require __DIR__.'/auth.php';

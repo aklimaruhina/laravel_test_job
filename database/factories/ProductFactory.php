@@ -18,7 +18,7 @@ class ProductFactory extends Factory
         $slug = $this->faker->slug($title);
         return [
             'product_name' => $title,
-            'slug' => $slug,
+            'slug' => 'test-product',
             'status' => 1
         ];
     }

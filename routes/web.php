@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\AttributeController;
-
+use App\Models\User;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,7 +20,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
+Route::get('/users', function(){
+    $users = User::orderBy('id', 'asc')->get();
+    dd($users);
+});
 Route::middleware(['auth', 'verified'])->group(function() {
 	Route::get('/dashboard', function () {
 	    return view('dashboard');

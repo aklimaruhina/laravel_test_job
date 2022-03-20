@@ -1,5 +1,5 @@
 demo: https://themelookstask.herokuapp.com/
-github: https://github.com/ruhinacse14/laravel_test_job
+github: https://github.com/aklimaruhina/laravel_test_job
 
 1. At first Insert attributes value from attributes tab onclick 
 add/view button
